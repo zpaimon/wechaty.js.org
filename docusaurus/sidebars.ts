@@ -60,6 +60,8 @@ const puppetProviders: SubMenuData = {
     'puppet-providers/padlocal',
     'puppet-providers/wechat4u',
     'puppet-providers/xp',
+    'puppet-providers/oicq',
+    'puppet-providers/simplepad',
     'puppet-providers/service',
     'puppet-providers/mock',
     'puppet-providers/diy',
@@ -70,6 +72,7 @@ const puppetServices: SubMenuData = {
   label: 'Puppet Services',
   items: [
     'puppet-services/overview',
+    'puppet-services/workpro',
     'puppet-services/wxwork',
     'puppet-services/padlocal',
     'puppet-services/paimon',

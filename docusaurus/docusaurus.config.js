@@ -5,7 +5,8 @@ const {
   plugins,
   themeConfig,
   presets,
-}               = require('./config/mod.js')
+  themes,
+}               = require('./docusaurus.config.d/mod.js')
 
 const config = {
   title: 'Wechaty',
@@ -22,11 +23,25 @@ const config = {
   ],
   scripts: [
     '/js/gitter-sidecar.js',
+    '/js/baidu-statistics.js',
     { src: 'https://sidecar.gitter.im/dist/sidecar.v1.js', async: true },
   ],
   themeConfig,
   presets,
   plugins,
+  themes,
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-US',
+      },
+      zh: {
+        htmlLang: 'zh-CN',
+      },
+    },
+  },
 }
 
 module.exports = config
